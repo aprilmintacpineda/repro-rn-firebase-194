@@ -7,9 +7,13 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "install-all": "yarn install && cd ios && pod install && cd .."
   },
   "dependencies": {
+    "@react-native-firebase/app": "^10.2.0",
+    "@react-native-firebase/iid": "^10.2.0",
+    "@react-native-firebase/messaging": "^10.2.0",
     "react": "16.13.1",
     "react-native": "0.63.4"
   },
