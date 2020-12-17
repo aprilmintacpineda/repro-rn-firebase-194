@@ -20,8 +20,8 @@ https://github.com/zoontek/react-native-bootsplash/issues/194
 
 expectation is that `onNotificationOpened` will be called, but it won't be called.
 
-# Work around
+# Update
 
-use `messaging().getInitialNotification`.
+`onNotificationOpened` is only called when the app is on the background not on kill state, for kill state use `getInitialNotification`.
 
 [Checkout diff](https://github.com/aprilmintacpineda/repro-rn-firebase-194/commit/a2665b462ff6657764254b5f795989c5730cb200)
