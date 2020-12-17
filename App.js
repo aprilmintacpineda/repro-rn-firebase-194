@@ -13,10 +13,8 @@ function App () {
       const token = await iid().getToken();
       console.log('token', token);
 
-      // getInitialNotification works fine and can be alternative
-      // for onNotificationOpenedApp
-      // const clickedNotif = await messaging().getInitialNotification();
-      // console.log('clickedNotif', clickedNotif);
+      const clickedNotif = await messaging().getInitialNotification();
+      console.log('clickedNotif', clickedNotif);
 
       const authStatus = await messaging().requestPermission();
       const wasAllowed = (
